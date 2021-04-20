@@ -1,0 +1,12 @@
+{
+  "users": [
+    {
+      "firstname": "brins",
+      "lastname": "j",
+      "age": "20",
+      "dob": "01-06-2000",
+      "education": "bca"
+    }
+  ]
+  
+}
