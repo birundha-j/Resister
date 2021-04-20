@@ -1,38 +1,47 @@
-.App {
+.container{
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+  background-color: rgb(240, 219, 228);
+  height: 1000px;
+}
+
+.fieldsView{
+  margin: 5px 0px;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.ant-input {
+  padding: 10px !important;
+  border-radius: 10px !important;
+  border: 1px solid rgb(219, 87, 219) !important;
+}
+
+.btnView{
   text-align: center;
+  margin: 10px;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ant-btn  {
+  width: 180px;
+  height: 50px !important;
+  margin: 5px 10px !important;
+  border-radius: 8px !important;
+  font-size: 20px !important;
+font-weight: 600 !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.ant-btn-primary {
+  color: #fff;
+  background: purple !important;
+  border: none !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.ant-btn:hover {
+  color: #fff;
+  border: none !important;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
