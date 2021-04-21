@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import './App.css';
 import { Form, Input, Button, Checkbox, Row, Col } from 'antd';
+import Axios from 'axios';
 
 const initialValues = {
   firstname: "",
@@ -24,8 +25,27 @@ function App() {
     });
   };
 
+  // useEffect(() => {
+  const url = "http://localhost:3000/users"
+
+  // }, [])
+
   function addData() {
     setTest([...test, { fname: values.firstname, lname: values.lastname, age: values.age, db: values.dob, educ: values.education }])
+    Axios.post(url, {
+      fname: values.firstname, lname: values.lastname, age: values.age, db: values.dob, educ: values.education
+    })
+      .then(res => {
+        console.log(res.values, "values")
+      })
+
+    setValues({
+      firstname: "",
+      lastname: "",
+      age: "",
+      dob: "",
+      education: "",
+    })
   }
 
   console.log(test, "testtest")
