@@ -1,0 +1,1 @@
+export const GET_RESOURCE_TYPE = "GET_RESOURCE_TYPE";
